@@ -1,0 +1,15 @@
+.container {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
