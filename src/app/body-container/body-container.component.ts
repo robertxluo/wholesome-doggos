@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Doggo } from '../models/doggo';
-import { FetchDoggoService } from './fetch-doggo.service';
 
 @Component({
   selector: 'app-body-container',
@@ -8,19 +7,8 @@ import { FetchDoggoService } from './fetch-doggo.service';
   styleUrls: ['./body-container.component.css']
 })
 export class BodyContainerComponent implements OnInit {
-  dogData: Doggo;
-  errorMessage: string;
-
-  constructor(private fetchDoggoService: FetchDoggoService) {}
+  @Input() dogData: Doggo;
+  constructor() {}
 
   ngOnInit() {}
-
-  generateDog() {
-    this.fetchDoggoService.getDoggos().subscribe(
-      data => {
-        this.dogData = data;
-      },
-      error => (this.errorMessage = error as any)
-    );
-  }
 }
