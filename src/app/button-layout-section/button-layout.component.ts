@@ -9,7 +9,7 @@ import { Doggo } from '../models/doggo';
 })
 export class ButtonLayoutComponent implements OnInit {
   dogData: Doggo;
-  errorMessage: string;
+  errorStatus = false;
 
   constructor(private fetchDoggoService: FetchDoggoService) {}
 
@@ -19,8 +19,14 @@ export class ButtonLayoutComponent implements OnInit {
     this.fetchDoggoService.getDoggos().subscribe(
       data => {
         this.dogData = data;
+        this.errorStatus = false;
       },
-      error => (this.errorMessage = error as any)
+      error => this.onError(error)
     );
+  }
+
+  onError(error) {
+    this.errorStatus = true;
+    this.dogData.message = '../../assets/corgi.jpg';
   }
 }

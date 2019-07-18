@@ -7,4 +7,13 @@
   </div>
 </section>
 
+<div *ngIf="errorStatus">
+  <p style="text-align: center;">Oh no! We couldn't fetch a doggo, here's a picture of a corgi instead!</p>
+  <div class="picture">
+    <figure class="image">
+      <img src="../../assets/corgi.jpg">
+    </figure>
+  </div>
+</div>
+
 <app-body-container [dogData]="dogData"></app-body-container>

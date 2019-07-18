@@ -3,7 +3,17 @@
   justify-content: center;
 }
 
+.picture {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  border-radius: 10%;
+}
+
 /* Box Shadow Inset */
+
 .hvr-box-shadow-inset {
   display: inline-block;
   vertical-align: middle;
@@ -24,6 +34,7 @@
 }
 
 /* Wobble Horizontal */
+
 @-webkit-keyframes hvr-wobble-horizontal {
   16.65% {
     -webkit-transform: translateX(8px);
@@ -50,6 +61,7 @@
     transform: translateX(0);
   }
 }
+
 @keyframes hvr-wobble-horizontal {
   16.65% {
     -webkit-transform: translateX(8px);
@@ -76,6 +88,7 @@
     transform: translateX(0);
   }
 }
+
 .hvr-wobble-horizontal {
   display: inline-block;
   vertical-align: middle;
@@ -83,9 +96,8 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.hvr-wobble-horizontal:hover,
-.hvr-wobble-horizontal:focus,
-.hvr-wobble-horizontal:active {
+
+.hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
   -webkit-animation-name: hvr-wobble-horizontal;
   animation-name: hvr-wobble-horizontal;
   -webkit-animation-duration: 1s;
@@ -97,6 +109,7 @@
 }
 
 /* Buzz */
+
 @-webkit-keyframes hvr-buzz {
   50% {
     -webkit-transform: translateX(3px) rotate(2deg);
@@ -107,6 +120,7 @@
     transform: translateX(-3px) rotate(-2deg);
   }
 }
+
 @keyframes hvr-buzz {
   50% {
     -webkit-transform: translateX(3px) rotate(2deg);
@@ -117,6 +131,7 @@
     transform: translateX(-3px) rotate(-2deg);
   }
 }
+
 .hvr-buzz {
   display: inline-block;
   vertical-align: middle;
@@ -124,9 +139,8 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.hvr-buzz:hover,
-.hvr-buzz:focus,
-.hvr-buzz:active {
+
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
   -webkit-animation-name: hvr-buzz;
   animation-name: hvr-buzz;
   -webkit-animation-duration: 0.15s;
