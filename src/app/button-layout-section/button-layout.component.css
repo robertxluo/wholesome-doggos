@@ -12,6 +12,22 @@ img {
   border-radius: 10%;
 }
 
+.button {
+  border-radius: 70595px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.02) translateY(-4px);
+}
+
+.button:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transform: scale(0.98) translateY(-2px);
+}
+
+
 /* Box Shadow Inset */
 
 .hvr-box-shadow-inset {
@@ -40,22 +56,27 @@ img {
     -webkit-transform: translateX(8px);
     transform: translateX(8px);
   }
+
   33.3% {
     -webkit-transform: translateX(-6px);
     transform: translateX(-6px);
   }
+
   49.95% {
     -webkit-transform: translateX(4px);
     transform: translateX(4px);
   }
+
   66.6% {
     -webkit-transform: translateX(-2px);
     transform: translateX(-2px);
   }
+
   83.25% {
     -webkit-transform: translateX(1px);
     transform: translateX(1px);
   }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -67,22 +88,27 @@ img {
     -webkit-transform: translateX(8px);
     transform: translateX(8px);
   }
+
   33.3% {
     -webkit-transform: translateX(-6px);
     transform: translateX(-6px);
   }
+
   49.95% {
     -webkit-transform: translateX(4px);
     transform: translateX(4px);
   }
+
   66.6% {
     -webkit-transform: translateX(-2px);
     transform: translateX(-2px);
   }
+
   83.25% {
     -webkit-transform: translateX(1px);
     transform: translateX(1px);
   }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -97,7 +123,9 @@ img {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-.hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
+.hvr-wobble-horizontal:hover,
+.hvr-wobble-horizontal:focus,
+.hvr-wobble-horizontal:active {
   -webkit-animation-name: hvr-wobble-horizontal;
   animation-name: hvr-wobble-horizontal;
   -webkit-animation-duration: 1s;
@@ -115,6 +143,7 @@ img {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
+
   100% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
@@ -126,6 +155,7 @@ img {
     -webkit-transform: translateX(3px) rotate(2deg);
     transform: translateX(3px) rotate(2deg);
   }
+
   100% {
     -webkit-transform: translateX(-3px) rotate(-2deg);
     transform: translateX(-3px) rotate(-2deg);
@@ -140,7 +170,9 @@ img {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+.hvr-buzz:hover,
+.hvr-buzz:focus,
+.hvr-buzz:active {
   -webkit-animation-name: hvr-buzz;
   animation-name: hvr-buzz;
   -webkit-animation-duration: 0.15s;
