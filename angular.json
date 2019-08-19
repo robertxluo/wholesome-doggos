@@ -20,9 +20,8 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "src/styles.css",
-              "node_modules/modern-normalize/modern-normalize.css",
-              "node_modules/bulma/css/bulma.min.css"
+              "node_modules/bulma/css/bulma.min.css",
+              "src/styles.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true
