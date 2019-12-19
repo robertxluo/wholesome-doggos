@@ -1,3 +1,12 @@
-# Wholesome Doggos
+# 🐶 Wholesome Doggos
 
-[Live Demo](https://wholesome-doggos.robertluo.dev/).
+Unfortunately, the dogs are blocking the list of features. Try going incorgnito next time.
+
+## Features
+
+- Dog
+- Dog
+- Dog
+- Dog
+- Dog
+- Dog
